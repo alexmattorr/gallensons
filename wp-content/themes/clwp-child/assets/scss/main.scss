@@ -1,0 +1,42 @@
+//  Settings
+@import "global/settings"; // Foundation settings file.
+
+// Foundation mixins & browser resets
+@import '../components/foundation-sites/scss/foundation';
+
+@import '../components/slick/slick-theme.scss';
+@import '../components/slick/slick.scss';
+
+// WP overrides
+@import "global/wp-admin";
+@import "global/wp-overrides";
+@import "global/accessibility";
+
+// Foundation global styles
+@include foundation-global-styles;
+// Individual foundation components
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-media-object;
+@include foundation-visibility-classes;
+@include foundation-flex-classes;
+
+
+// Global
+@import "global/typography";
+@import "global/mixins";
+@import "global/utility";
+
+// Modules
+@import "modules/footer";
+@import "modules/header";
+@import "modules/section";
+
+// Components
+@import "components/button";
+@import "components/cards";
+@import "components/hero";
+@import "components/logo";
+@import "components/side-by-side";

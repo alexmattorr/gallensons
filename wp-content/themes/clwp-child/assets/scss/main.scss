@@ -30,6 +30,7 @@
 @import "global/utility";
 
 // Modules
+@import "modules/carousel";
 @import "modules/footer";
 @import "modules/header";
 @import "modules/section";
@@ -37,6 +38,9 @@
 // Components
 @import "components/button";
 @import "components/cards";
+@import "components/editor";
 @import "components/hero";
 @import "components/logo";
+@import "components/instagram";
 @import "components/side-by-side";
+@import "components/title";

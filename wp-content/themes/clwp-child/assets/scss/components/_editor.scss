@@ -1,0 +1,16 @@
+.editor {
+  max-width: 800px;
+  margin: 0 auto;
+
+  > * {
+    margin-top: map-get($spacing, 1);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

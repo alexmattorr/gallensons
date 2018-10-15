@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
 
-    h4 {
+    h2 {
       position: absolute;
       z-index: 2;
     }
@@ -29,8 +29,6 @@
   }
 
   &.carousel {
-    margin-bottom: - map-get($spacing, 2);
-
     .slick-list {
       width: 100%;
       padding: 0 !important;
@@ -41,43 +39,22 @@
     }
 
     .slick-slide {
+      display: flex !important;
       padding-bottom: map-get($spacing, 2);
+      height: auto;
       outline: none;
+
+      .column, a {
+        height: 100%;
+      }
+
+      a {
+        background-color: $white;
+      }
     }
 
     .slick-dots {
       position: relative;
-      bottom: 0;
-      height: map-get($spacing, 1);
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
-
-      li {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        height: 10px;
-        width: 10px;
-      }
-
-      button {
-        padding: 0;
-        width: 10px;
-        height: 10px;
-        background-color: transparent;
-        border: 1px solid $black;
-        border-radius: 50%;
-        transition: background-color ease .3s;
-
-        &:before {
-          display: none;
-        }
-      }
-
-      .slick-active button {
-        background-color: $black;
-      }
     }
   }
 
@@ -103,12 +80,12 @@
   }
 
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba($black, 0.2);
+    box-shadow: $shadow;
   }
 }
 
 .card-text {
-  padding: 10px;
+  padding: map-get($spacing, 1);
   background-color: $white;
   color: $black;
   border-top: 1px solid $medium-gray;

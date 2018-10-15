@@ -1,6 +1,6 @@
 $light: 300;
-$medium: 500;
-$semibold: 600;
+$medium: 400;
+$bold: 700;
 
 h1,h2,h3,h4,h5,h6,p,li,a,button {
   letter-spacing: .15rem;
@@ -13,18 +13,20 @@ h1,h2,h3,h4,h5,h6,p,li,a,button {
 }
 
 strong {
-  font-weight: $semibold;
+  font-weight: $bold;
+}
+
+h1,h2,h3 {
+  font-family: $head-font-family;
+  text-transform: uppercase;
+}
+
+h4,h5,h6 {
+  font-weight: $bold;
+  text-transform: uppercase;
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
-
-  &.p1 {
-    font-size: 14px;
-  }
-
-  &.p2 {
-    font-size: 12px;
-  }
 }

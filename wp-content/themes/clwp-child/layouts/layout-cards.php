@@ -20,13 +20,13 @@
     <a href="<?= $link['url']; ?>" target="<?= $link['target']; ?>" class="card">
       <figure style="background-image: url(<?= $image; ?>);">
         <?php if($card_type === 'image-cards'): ?>
-          <h4><?= $title; ?></h4>
+          <h2><?= $title; ?></h2>
         <?php endif; ?>
       </figure>
 
       <?php if($card_type === 'text-cards'): ?>
         <div class="card-text">
-          <h4><?= $title; ?></h4>
+          <h6><?= $title; ?></h6>
           <p><?= $text; ?></p>
         </div>
       <?php endif; ?>

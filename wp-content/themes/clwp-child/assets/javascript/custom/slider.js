@@ -32,8 +32,8 @@
         autoplay: true,
         autoplaySpeed: 6000,
         arrows: true,
-        fade: false,
-        dots: true
+        dots: true,
+        fade: false
       });
     },
 

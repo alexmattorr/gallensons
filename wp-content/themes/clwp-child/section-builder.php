@@ -17,12 +17,18 @@
   <?php
     if( have_rows('layout') ):
       while ( have_rows('layout') ) : the_row();
-        if( get_row_layout() == 'cards' ):
+        if( get_row_layout() == 'button' ):
+          get_template_part('layouts/layout', 'button');
+        elseif( get_row_layout() == 'cards' ):
           get_template_part('layouts/layout', 'cards');
         elseif( get_row_layout() == 'instagram' ):
           get_template_part('layouts/layout', 'instagram');
         elseif( get_row_layout() == 'hero' ):
           get_template_part('layouts/layout', 'hero');
+        elseif( get_row_layout() == 'title' ):
+          get_template_part('layouts/layout', 'title');
+        elseif( get_row_layout() == 'wysiwyg' ):
+          get_template_part('layouts/layout', 'wysiwyg');
         endif;
       endwhile;
     endif;

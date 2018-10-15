@@ -1,0 +1,54 @@
+.sb_instagram_header {
+  padding: 0 map-get($spacing, 1) !important;
+  margin-bottom: 0 !important;
+}
+
+.sbi_header_link {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.sbi_header_text {
+  padding-top: 0 !important;
+  color: $black;
+}
+
+.sbi_bio {
+  display: none;
+}
+
+#sbi_images {
+  margin: map-get($spacing, 1) 0!important;
+  padding: 0 !important;
+}
+
+.sbi_photo_wrap {
+  padding: map-get($spacing, 1) !important;
+}
+
+.sbi_photo {
+  border: 1px solid $medium-gray;
+  transition: box-shadow ease .3s;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba($black, 0.2);
+  }
+}
+
+.sbi_load_btn {
+  margin-top: 0 !important;
+  padding: 10px 20px !important;
+  background-color: $blue !important;
+  color: $white !important;
+  font-size: 12px !important;
+  font-weight: $bold !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  border-radius: $global-radius !important;
+  border-color: $blue !important;
+  transition: background-color ease .3s, border ease .3s !important;
+  &:hover {
+    background-color: darken($blue, 5%) !important;
+    border-color: darken($blue, 5%) !important;
+  }
+}

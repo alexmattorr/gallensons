@@ -1,6 +1,12 @@
 .hero {
   margin-top: - map-get($spacing, 4) !important;
   margin-bottom: - map-get($spacing, 4) !important;
+
+  &.carousel {
+    .slick-dots {
+      bottom: map-get($spacing, 2);
+    }
+  }
 }
 
 .hero-image {
@@ -15,6 +21,21 @@
 
     > div {
       text-align: center;
+    }
+  }
+
+  h2, h6 {
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    margin-top: map-get($spacing, 4);
+  }
+
+  @include breakpoint(medium up) {
+    h2 {
+      font-size: 100px;
+      line-height: 1;
     }
   }
 

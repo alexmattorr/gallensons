@@ -14,11 +14,11 @@
     <div class="column">
       <div>
         <?php if($title): ?>
-          <h2 class="h1"><?= $title; ?></h2>
+          <h2><?= $title; ?></h2>
         <?php endif; ?>
 
         <?php if($subtext): ?>
-          <h2 class="h1"><?= $subtext; ?></h2>
+          <h6><?= $subtext; ?></h6>
         <?php endif; ?>
 
         <?php 
@@ -29,7 +29,7 @@
                 $type = get_sub_field('type');
         ?>
           <div class="buttons">
-            <a href="<?= $link['url']; ?>" class="<?= $type; ?>" target="<?= $link['target']; ?>"><?= $link['title']; ?></a>
+            <a href="<?= $link['url']; ?>" class="button <?= $type; ?>" target="<?= $link['target']; ?>"><?= $link['title']; ?></a>
           </div>
         <?php endwhile; endif; endif; ?>
       </div>

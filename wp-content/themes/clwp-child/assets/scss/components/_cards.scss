@@ -16,7 +16,7 @@
   }
 
   &.image-cards {
-    figure:after {
+    figure.shadow:after {
       content: '';
       position: absolute;
       z-index: 1;
@@ -25,6 +25,20 @@
       width: 100%;
       height: 100%;
       background-image: linear-gradient(to bottom left, rgba($black, 0), rgba($black, 0.6));
+    }
+
+    .slick-slide > div {
+      width: 100%;
+    }
+  }
+
+  &.text-cards {
+    .column, a {
+      height: 100%;
+    }
+
+    a {
+      background-color: $white;
     }
   }
 
@@ -43,14 +57,6 @@
       padding-bottom: map-get($spacing, 2);
       height: auto;
       outline: none;
-
-      .column, a {
-        height: 100%;
-      }
-
-      a {
-        background-color: $white;
-      }
     }
 
     .slick-dots {
@@ -76,7 +82,6 @@
   figure {
     @include bg-cover(center);
     @include aspect-ratio(4,3);
-    background-color: $light-gray;
   }
 
   &:hover {

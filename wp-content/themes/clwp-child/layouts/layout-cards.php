@@ -18,7 +18,7 @@
 
   <div class="column small-12 <?php if($card_layout != 'carousel') { echo 'medium-' . $col; echo ' large-' . $col; }; ?>">
     <a href="<?= $link['url']; ?>" target="<?= $link['target']; ?>" class="card">
-      <figure style="background-image: url(<?= $image; ?>);">
+      <figure class="<?php if($title) { echo 'shadow'; } ?>" style="background-image: url(<?= $image; ?>);">
         <?php if($card_type === 'image-cards'): ?>
           <h2><?= $title; ?></h2>
         <?php endif; ?>

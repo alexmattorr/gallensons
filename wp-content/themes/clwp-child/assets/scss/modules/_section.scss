@@ -21,7 +21,7 @@ section {
   }
 
   > div {
-    margin-top: map-get($spacing, 2);
+    margin-top: map-get($spacing, 4);
 
     &:first-child {
       margin-top: 0;

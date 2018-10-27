@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
 
-    h2 {
+    * {
       position: absolute;
       z-index: 2;
     }
@@ -54,21 +54,30 @@
 
     .slick-slide {
       display: flex !important;
-      padding-bottom: map-get($spacing, 2);
       height: auto;
       outline: none;
+
+      > div {
+        width: 100%;
+      }
     }
 
     .slick-dots {
       position: relative;
+      margin-top: map-get($spacing, 4);
+    }
+
+    .column {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 
   &.card-spacing {
-    margin-bottom: - map-get($spacing, 2);
+    margin-bottom: - map-get($spacing, 4);
 
     .column {
-      margin-bottom: map-get($spacing, 2);
+      margin-bottom: map-get($spacing, 4);
     }
   }
 }
@@ -90,8 +99,12 @@
 }
 
 .card-text {
-  padding: map-get($spacing, 1);
+  padding: map-get($spacing, 3);
   background-color: $white;
   color: $black;
   border-top: 1px solid $medium-gray;
+
+  *:first-child {
+    margin-bottom: map-get($spacing, 2);
+  }
 }

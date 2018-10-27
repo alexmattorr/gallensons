@@ -27,6 +27,8 @@
           get_template_part('layouts/layout', 'hero');
         elseif( get_row_layout() == 'title' ):
           get_template_part('layouts/layout', 'title');
+        elseif( get_row_layout() == 'used_guns' ):
+          get_template_part('layouts/layout', 'used-guns');
         elseif( get_row_layout() == 'wysiwyg' ):
           get_template_part('layouts/layout', 'wysiwyg');
         endif;

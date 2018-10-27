@@ -1,5 +1,5 @@
 .sb_instagram_header {
-  padding: 0 map-get($spacing, 1) !important;
+  padding: 0 map-get($spacing, 3) !important;
   margin-bottom: 0 !important;
 }
 
@@ -18,12 +18,12 @@
 }
 
 #sbi_images {
-  margin: map-get($spacing, 1) 0!important;
+  margin: map-get($spacing, 3) 0!important;
   padding: 0 !important;
 }
 
 .sbi_photo_wrap {
-  padding: map-get($spacing, 1) !important;
+  padding: map-get($spacing, 3) !important;
 }
 
 .sbi_photo {

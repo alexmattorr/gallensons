@@ -3,6 +3,8 @@
   margin-bottom: - map-get($spacing, 4) !important;
 
   &.carousel {
+    margin-bottom: 0;
+
     .slick-dots {
       bottom: map-get($spacing, 3);
     }

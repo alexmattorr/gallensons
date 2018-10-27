@@ -23,6 +23,8 @@
           get_template_part('layouts/layout', 'cards');
         elseif( get_row_layout() == 'instagram' ):
           get_template_part('layouts/layout', 'instagram');
+        elseif( get_row_layout() == 'side_by_side' ):
+          get_template_part('layouts/layout', 'side-by-side');
         elseif( get_row_layout() == 'hero' ):
           get_template_part('layouts/layout', 'hero');
         elseif( get_row_layout() == 'title' ):

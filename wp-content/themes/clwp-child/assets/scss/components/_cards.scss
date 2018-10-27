@@ -64,7 +64,7 @@
 
     .slick-dots {
       position: relative;
-      margin-top: map-get($spacing, 4);
+      margin: map-get($spacing, 4) 0;
     }
 
     .column {

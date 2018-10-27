@@ -21,7 +21,7 @@
   }
 
   &.outline {
-    background-color: $white;
+    background-color: transparent;
     color: $blue;
     border-color: $blue;
     transition: background-color ease .3s, color ease .3s, border ease .3s;
